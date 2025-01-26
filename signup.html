@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ثبت‌نام</title>
+    <style>
+        @font-face {
+            font-family: sahel;
+            src: url(font/Sahel-Black.ttf);
+        }
+        
+        body {
+            font-family: sahel;
+            background-color: #fff5e6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-container {
+            background: linear-gradient(135deg, #fceabb, #f8b500);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        .signup-container h1 {
+            text-align: center;
+            color: #cc3333;
+        }
+        .signup-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #cc3333;
+            font-weight: bold;
+            text-align: right;
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cc3333;
+            border-radius: 5px;
+        }
+        .signup-container button {
+            width: 50%;
+            padding: 10px;
+            background-color: #cc3333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 24%;
+            font-family: sahel;
+
+        }
+        .signup-container button:hover {
+            background-color: #993333;
+            font-family: sahel;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div style="text-align: center;"><img width="100px" src="img/McDonalds-Logo.png" alt=""></div> 
+        <h1>ثبت‌نام</h1>
+        <form action="#" method="post">
+            <label for="username">نام کاربری</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="phone">شماره موبایل</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="password">رمز عبور</label>
+            <input type="password" id="password" name="password" required>
+
+            <button onclick="home()" type="submit">ثبت‌نام</button>
+        </form>
+    </div>
+
+    <script>function home(){
+        window.location.href = 'index.html';
+    }</script>
+</body>
+</html>

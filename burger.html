@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body style="background-color: rgb(221, 221, 221);" dir="rtl">
+    <div class="container" style="display: flex;" >
+        <div style="font-family: samim; color: rgb(255, 0, 0);align-items: right;display: flex;float: right; " class="col-6 text2" > <div> fast food</div> </div>
+        <div class="col-6" style="text-align: left;">
+            <button type="button" class="btn btn-outline-secondary">ثبت نام</button>
+            <button type="button" class="btn btn-outline-primary">ورود</button>
+        </div>
+
+    </div>
+    <div class="container" style="display: flex;vertical-align:middle;" >
+        <div style="text-align: right;" class="col-6"><img onclick="home()" style="cursor: pointer;width:40%;padding-top: 20px;" src="img/McDonalds-Logo.png" alt="McDonalds"></div>
+        <div onclick="home()" style="cursor: pointer;text-align: left;" class="col-6 "><span class="text1">McDonald's</span></div>
+    </div>
+    
+    <br>
+   <div class="container">
+    <div class="div1 ">
+        <div  id="pizza" class="div2">
+            <div class="div3">
+                <img onclick="navigateTo('index')" class="img1" src="img/pizza.png" alt="پیتزا">
+            </div>
+            <br>
+            <span class="span1">پیتزا</span>
+        </div>
+        <div  id="burger" class="div2">
+            <div class="div3">
+                <img onclick="navigateTo('burger')" class="img1" src="img/burger.png" alt="همبرگر" style="margin-top:20px;">
+            </div>
+            <br>
+            <span class="span1">همبرگر</span>
+        </div>
+        <div  id="sandwich" class="div2">
+            <div class="div3">
+                <img onclick="navigateTo('sandwich')" class="img1" src="img/sandwich.png" alt="ساندویچ" style="margin-top:30px;">
+            </div>
+            <br>
+            <span class="span1">ساندویچ</span>
+        </div>
+        <div  id="sodas" class="div2">
+            <div class="div3">
+                <img onclick="navigateTo('sodas')" class="img1" src="img/sodas.png" alt="نوشیدنی" style="margin-top:20px;">
+            </div>
+            <br>
+            <span class="span1">نوشیدنی</span>
+        </div>
+        <div  id="frenchfrize" class="div2">
+            <div class="div3">
+                <img onclick="navigateTo('frenchfrize')" style="width: 50%;" class="img1" src="img/frenchfrize.png" alt="پیش غذا" style="width: 70%;">
+            </div>
+            <br>
+            <span class="span1">پیش غذا</span>
+        </div>
+    </div></div>
+    <br>
+    <br>
+    <div>
+        <div style="margin-bottom:20px;" class="container">
+            <!-- همبرگر کلاسیک -->
+            <div class="col-6 a1">
+                <div>
+                <img class="food-img" src="img/burger.png" alt="همبرگر کلاسیک">
+                </div>
+                <br>
+                <span class="food-title">همبرگر کلاسیک</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> گوشت همبرگر، پنیر، کاهو، گوجه‌فرنگی، سس
+                </p>
+                <br>
+                <div class="a2">
+                    <i id="plus-classic-burger" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="quantity-classic-burger">0</span>
+                    <i id="minus-classic-burger" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price11">150000</span>تومان</div>
+            </div>
+    
+            <!-- همبرگر دبل -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/double_burger.png" alt="همبرگر دبل">
+                <br>
+                <span class="food-title">همبرگر دبل</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> دو گوشت همبرگر، پنیر، کاهو، گوجه‌فرنگی، سس
+                </p>
+                <br>
+                <div class="a2">
+                    <i id="plus-double-burger" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="quantity-double-burger">0</span>
+                    <i id="minus-double-burger" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price12">200000</span>تومان</div>
+            </div>
+        </div>
+    
+        <div style="margin-bottom:20px;" class="container">
+            <!-- همبرگر بیکن -->
+            <div class="col-6 a1">
+                <img style="scale: 1.05;" class="food-img" src="img/bacon_burger.png" alt="همبرگر بیکن">
+                <br>
+                <span class="food-title">همبرگر بیکن</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> گوشت همبرگر، بیکن، پنیر، کاهو، گوجه‌فرنگی، سس
+                </p>
+                <br>
+                <div class="a2">
+                    <i id="plus-bacon-burger" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="quantity-bacon-burger">0</span>
+                    <i id="minus-bacon-burger" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price13">165000</span>تومان</div>
+            </div>
+    
+            <!-- همبرگر چییز -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/cheese_burger.png" alt="همبرگر چییز">
+                <br>
+                <span class="food-title">همبرگر چییز</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> گوشت همبرگر، پنیر چدار، کاهو، گوجه‌فرنگی، سس
+                </p>
+                <br>
+                <div class="a2">
+                    <i id="plus-cheese-burger" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="quantity-cheese-burger">0</span>
+                    <i id="minus-cheese-burger" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price14">190000</span>تومان</div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; color: blue;font-size: larger;font-weight: bold;font-family:samim ;" id="final"></div>
+    <div style="text-align: center;"><Span style="text-align: center; color: rgba(0, 0, 0, 0.726);font-size: larger;font-weight: bold;font-family:samim ;" id="final3"></Span>
+    <Span style="text-align: center; color: rgb(255, 0, 0);font-size: larger;font-weight: bold;font-family:samim ;" id="final2"></Span>
+    
+    <Span style="text-align: center; color: rgb(0, 0, 0, 0.726);font-size: larger;font-weight: bold;font-family:samim ;" id="final4"></Span></div>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button style="font-size: larger;font-weight: bold;font-family:samim ;" class="btn btn-success" type="button">ثبت</button>
+    <br>  
+    <br>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function signup(){
+            window.location.href = 'signup.html';
+        }
+        function login(){
+            window.location.href = 'login.html';
+        }
+        function navigateTo(page) {
+            $.ajax({
+                url: `${page}.html`,
+                method: 'GET',
+                success: function (html) {
+                    $('body').html(html); 
+                },
+                error: function () {
+                    alert('خطا در بارگذاری صفحه.');
+                }
+            });
+        }
+        function home(){
+            window.location.href = 'index.html';
+        }
+        function increaseQuantity(burgerType) {
+            let quantityElement = document.getElementById('quantity-' + burgerType);
+            let currentQuantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = currentQuantity + 1;
+            updateFinal();
+
+        }
+    
+        // کاهش تعداد
+        function decreaseQuantity(burgerType) {
+            let quantityElement = document.getElementById('quantity-' + burgerType);
+            let currentQuantity = parseInt(quantityElement.innerText);
+            if (currentQuantity > 0) {
+                quantityElement.innerText = currentQuantity - 1;
+            }
+            updateFinal();
+
+        }
+        function updateFinal() {
+            var p1 = document.getElementById('quantity-classic-burger').innerText;
+            var p2 = document.getElementById('quantity-double-burger').innerText;
+            var p3 = document.getElementById('quantity-cheese-burger').innerText;
+            var p4 = document.getElementById('quantity-bacon-burger').innerText;
+            
+            var finalContent = "";
+            if (parseInt(p1) > 0) finalContent += p1 + " همبرگر کلاسیک<br>";
+            if (parseInt(p2) > 0) finalContent += p2 + " همبرگر دبل<br>";
+            if (parseInt(p3) > 0) finalContent += p3 + "  همبرگر چییز  <br>";
+            if (parseInt(p4) > 0) finalContent += p4 + " همبرگر بیکن<br>";
+            
+            if(parseInt(p1) == 0&&parseInt(p2) == 0&&parseInt(p3) == 0&&parseInt(p4) == 0){ document.getElementById('final2').innerHTML="";
+            document.getElementById('final3').innerHTML=""; document.getElementById('final4').innerHTML=""}
+            if(parseInt(p1) > 0||parseInt(p2) > 0||parseInt(p3) > 0||parseInt(p4) > 0){
+                document.getElementById('final3').innerHTML="قیمت:"
+                document.getElementById('final2').innerHTML=(p1*document.getElementById('price11').innerHTML)+(p2*document.getElementById('price12').innerHTML)+(p3*document.getElementById('price14').innerHTML)+(p4*document.getElementById('price13').innerHTML)
+                document.getElementById('final4').innerHTML="تومان"
+            } 
+        document.getElementById('final').innerHTML = finalContent;
+        }
+        // اضافه کردن Event Listener به دکمه‌های مثبت و منفی
+        document.getElementById('plus-classic-burger').addEventListener('click', function() {
+            increaseQuantity('classic-burger');
+        });
+        document.getElementById('minus-classic-burger').addEventListener('click', function() {
+            decreaseQuantity('classic-burger');
+        });
+    
+        document.getElementById('plus-double-burger').addEventListener('click', function() {
+            increaseQuantity('double-burger');
+        });
+        document.getElementById('minus-double-burger').addEventListener('click', function() {
+            decreaseQuantity('double-burger');
+        });
+    
+        document.getElementById('plus-bacon-burger').addEventListener('click', function() {
+            increaseQuantity('bacon-burger');
+        });
+        document.getElementById('minus-bacon-burger').addEventListener('click', function() {
+            decreaseQuantity('bacon-burger');
+        });
+    
+        document.getElementById('plus-cheese-burger').addEventListener('click', function() {
+            increaseQuantity('cheese-burger');
+        });
+        document.getElementById('minus-cheese-burger').addEventListener('click', function() {
+            decreaseQuantity('cheese-burger');
+        });
+    </script>
+</body>
+</html>

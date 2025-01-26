@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body dir="rtl">
+    <div class="container" style="display: flex;" >
+        <div style="font-family: samim; color: rgb(255, 0, 0);align-items: right;display: flex;float: right; " class="col-6 text2" > <div> fast food</div> </div>
+        <div class="col-6" style="text-align: left;">
+            <button onclick="signup()" type="button" class="btn btn-outline-secondary">ثبت نام</button>
+            <button onclick="login()" type="button" class="btn btn-outline-primary">ورود</button>
+        </div>
+
+    </div>
+    <div class="container" style="display: flex;vertical-align:middle;" >
+        <div style="text-align: right;" class="col-6"><img onclick="home()" style="cursor: pointer;width:40%;padding-top: 20px;" src="img/McDonalds-Logo.png" alt="McDonalds"></div>
+        <div onclick="home()" style="cursor: pointer;text-align: left;" class="col-6 "><span class="text1">McDonald's</span></div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="div1">
+            <div id="pizza" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('index')" class="img1" src="img/pizza.png" alt="پیتزا">
+                </div>
+                <br>
+                <span class="span1">پیتزا</span>
+            </div>
+            <div id="burger" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('burger')" class="img1" src="img/burger.png" alt="برگر" style="margin-top:20px;">
+                </div>
+                <br>
+                <span class="span1">برگر</span>
+            </div>
+            <div id="sandwich" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('sandwich')" class="img1" src="img/sandwich.png" alt="ساندویچ" style="margin-top:30px;">
+                </div>
+                <br>
+                <span class="span1">ساندویچ</span>
+            </div>
+            <div id="sodas" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('sodas')" class="img1" src="img/sodas.png" alt="نوشیدنی" style="margin-top:20px;">
+                </div>
+                <br>
+                <span class="span1">نوشیدنی</span>
+            </div>
+            <div id="frenchfrize" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('frenchfrize')" style="width: 50%;" class="img1" src="img/frenchfrize.png" alt="پیش غذا" style="width: 70%;">
+                </div>
+                <br>
+                <span class="span1">پیش غذا</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div style="margin-bottom:20px;" class="container">
+            <!-- ساندویچ فیله مرغ سوخاری -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/fried_chicken_sandwich.png" alt="ساندویچ فیله مرغ سوخاری">
+                <br>
+                <span class="food-title">ساندویچ فیله مرغ سوخاری</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> فیله مرغ سوخاری، کاهو، خیارشور، گوجه‌فرنگی، سس مایونز
+                </p>
+                
+                <div>
+                    <i id="plus-fried-chicken" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="count-fried-chicken">0</span>
+                    <i id="minus-fried-chicken" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price21">150000</span>تومان</div>
+            </div>
+
+            <!-- ساندویچ ژامبون تنوری -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/grilled_ham_sandwich.png" alt="ساندویچ ژامبون تنوری">
+                
+                <span class="food-title">ساندویچ ژامبون تنوری</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> ژامبون گوشت تنوری، پنیر پیتزا، قارچ، سس خردل
+                </p>
+                
+                <div>
+                    <i id="plus-grilled-ham" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="count-grilled-ham">0</span>
+                    <i id="minus-grilled-ham" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price22">160000</span>تومان</div>
+            </div>
+            
+        </div>
+
+        <div style="margin-bottom:20px;" class="container">
+            <!-- ساندویچ هات داگ ویژه -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/special_hotdog.png" alt="ساندویچ هات داگ ویژه">
+                <br>
+                <span class="food-title">ساندویچ هات داگ ویژه</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> هات داگ تنوری، پنیر پیتزا، قارچ، فلفل دلمه‌ای، سس کچاپ
+                </p>
+                
+                <div>
+                    <i id="plus-special-hotdog" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="count-special-hotdog">0</span>
+                    <i id="minus-special-hotdog" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price23">130000</span>تومان</div>
+            </div>
+
+            <!-- ساندویچ چیز استیک -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/cheese_steak_sandwich.png" alt="ساندویچ چیز استیک">
+                <br>
+                <span class="food-title">ساندویچ چیز استیک</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> گوشت استیک، پنیر چدار، قارچ، پیاز کاراملی، سس باربیکیو
+                </p>
+                <br>
+                <div>
+                    <i id="plus-cheese-steak" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="count-cheese-steak">0</span>
+                    <i id="minus-cheese-steak" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price24">220000</span>تومان</div>
+            </div>
+        </div>
+
+        <div style="margin-bottom:20px;" class="container">
+            <!-- ساندویچ فلافل ویژه -->
+            <div class="col-6 a1">
+                <img style="width: 200px;" class="food-img" src="img/special_falafel_sandwich.png" alt="ساندویچ فلافل ویژه">
+                
+                <span class="food-title">ساندویچ فلافل ویژه</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> فلافل، خیارشور، کاهو، گوجه‌فرنگی، سس تارتار
+                </p>
+                
+                <div>
+                    <i id="plus-special-falafel" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="count-special-falafel">0</span>
+                    <i id="minus-special-falafel" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price25">70000</span>تومان</div>
+            </div>
+
+            <!-- ساندویچ مرغ اسپایسی -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/spicy_chicken_sandwich.png" alt="ساندویچ مرغ اسپایسی">
+                <br>
+                <span class="food-title">ساندویچ مرغ اسپایسی</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> فیله مرغ اسپایسی، کاهو، خیارشور، سس چیلی
+                </p>
+                
+                <div>
+                    <i id="plus-spicy-chicken" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="count-spicy-chicken">0</span>
+                    <i id="minus-spicy-chicken" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price26">150000</span>تومان</div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; color: blue;font-size: larger;font-weight: bold;font-family:samim ;" id="final"></div>
+    <div style="text-align: center;"><Span style="text-align: center; color: rgba(0, 0, 0, 0.726);font-size: larger;font-weight: bold;font-family:samim ;" id="final3"></Span>
+    <Span style="text-align: center; color: rgb(255, 0, 0);font-size: larger;font-weight: bold;font-family:samim ;" id="final2"></Span>
+    
+    <Span style="text-align: center; color: rgb(0, 0, 0, 0.726);font-size: larger;font-weight: bold;font-family:samim ;" id="final4"></Span></div>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button style="font-size: larger;font-weight: bold;font-family:samim ;" class="btn btn-success" type="button">ثبت</button>
+    <br>  
+    <br>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function signup(){
+            window.location.href = 'signup.html';
+        }
+        function login(){
+            window.location.href = 'login.html';
+        }
+        function navigateTo(page) {
+            $.ajax({
+                url: `${page}.html`,
+                method: 'GET',
+                success: function (html) {
+                    $('body').html(html);
+                },
+                error: function () {
+                    alert('خطا در بارگذاری صفحه.');
+                }
+            });
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+        // افزایش تعداد
+function increaseCount(itemId) {
+    var countElement = document.getElementById('count-' + itemId);
+    var count = parseInt(countElement.innerText);
+    countElement.innerText = count + 1;
+    updateFinal();
+
+}
+
+// کاهش تعداد
+function decreaseCount(itemId) {
+    var countElement = document.getElementById('count-' + itemId);
+    var count = parseInt(countElement.innerText);
+    if (count > 0) {
+        countElement.innerText = count - 1;
+    }
+    updateFinal();
+
+}
+function updateFinal() {
+    var p1 = document.getElementById('count-fried-chicken').innerText;
+    var p2 = document.getElementById('count-grilled-ham').innerText;
+    var p3 = document.getElementById('count-special-hotdog').innerText;
+    var p4 = document.getElementById('count-cheese-steak').innerText;
+    var p5 = document.getElementById('count-special-falafel').innerText;
+    var p6 = document.getElementById('count-spicy-chicken').innerText;
+    var finalContent = "";
+    if (parseInt(p1) > 0) finalContent += p1 + "ساندویچ فیله مرغ سوخاری <br>";
+    if (parseInt(p2) > 0) finalContent += p2 + "ساندویچ ژامبون تنوری <br>";
+    if (parseInt(p3) > 0) finalContent += p3 + "ساندویچ هات داگ ویژه   <br>";
+    if (parseInt(p4) > 0) finalContent += p4 + " ساندویچ چیز استیک<br>";
+    if (parseInt(p5) > 0) finalContent += p5 + " ساندویچ فلافل ویژه<br>";
+    if (parseInt(p6) > 0) finalContent += p6 + " ساندویچ مرغ اسپایسی<br>";
+    if(parseInt(p1) == 0&&parseInt(p2) == 0&&parseInt(p3) == 0&&parseInt(p4) == 0&&parseInt(p5) == 0&&parseInt(p6) == 0){ document.getElementById('final2').innerHTML="";
+    document.getElementById('final3').innerHTML=""; document.getElementById('final4').innerHTML=""}
+    if(parseInt(p1) > 0||parseInt(p2) > 0||parseInt(p3) > 0||parseInt(p4) > 0||parseInt(p5) > 0||parseInt(p6) > 0){
+        document.getElementById('final3').innerHTML="قیمت:"
+        document.getElementById('final2').innerHTML=(p1*document.getElementById('price21').innerHTML)+(p2*document.getElementById('price22').innerHTML)+(p3*document.getElementById('price23').innerHTML)+(p4*document.getElementById('price24').innerHTML)+(p5*document.getElementById('price25').innerHTML)+(p6*document.getElementById('price26').innerHTML)
+        document.getElementById('final4').innerHTML="تومان"
+    } 
+document.getElementById('final').innerHTML = finalContent;
+}
+
+// افزودن event listeners برای آیکن‌ها
+document.getElementById('plus-fried-chicken').addEventListener('click', function() {
+    increaseCount('fried-chicken');
+});
+document.getElementById('minus-fried-chicken').addEventListener('click', function() {
+    decreaseCount('fried-chicken');
+});
+
+document.getElementById('plus-grilled-ham').addEventListener('click', function() {
+    increaseCount('grilled-ham');
+});
+document.getElementById('minus-grilled-ham').addEventListener('click', function() {
+    decreaseCount('grilled-ham');
+});
+
+document.getElementById('plus-special-hotdog').addEventListener('click', function() {
+    increaseCount('special-hotdog');
+});
+document.getElementById('minus-special-hotdog').addEventListener('click', function() {
+    decreaseCount('special-hotdog');
+});
+
+document.getElementById('plus-cheese-steak').addEventListener('click', function() {
+    increaseCount('cheese-steak');
+});
+document.getElementById('minus-cheese-steak').addEventListener('click', function() {
+    decreaseCount('cheese-steak');
+});
+
+document.getElementById('plus-special-falafel').addEventListener('click', function() {
+    increaseCount('special-falafel');
+});
+document.getElementById('minus-special-falafel').addEventListener('click', function() {
+    decreaseCount('special-falafel');
+});
+
+document.getElementById('plus-spicy-chicken').addEventListener('click', function() {
+    increaseCount('spicy-chicken');
+});
+document.getElementById('minus-spicy-chicken').addEventListener('click', function() {
+    decreaseCount('spicy-chicken');
+});
+
+    </script>
+</body>
+</html>

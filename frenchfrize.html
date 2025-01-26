@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body dir="rtl">
+    <div class="container" style="display: flex;" >
+        <div style="font-family: samim; color: rgb(255, 0, 0);align-items: right;display: flex;float: right; " class="col-6 text2" > <div> fast food</div> </div>
+        <div class="col-6" style="text-align: left;">
+            <button onclick="signup()" type="button" class="btn btn-outline-secondary">ثبت نام</button>
+            <button onclick="login()" type="button" class="btn btn-outline-primary">ورود</button>
+        
+        </div>
+
+    </div>
+    <div class="container" style="display: flex;vertical-align:middle;" >
+        <div style="text-align: right;" class="col-6"><img onclick="home()" style="cursor: pointer;width:40%;padding-top: 20px;" src="img/McDonalds-Logo.png" alt="McDonalds"></div>
+        <div onclick="home()" style="cursor: pointer;text-align: left;" class="col-6 "><span class="text1">McDonald's</span></div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="div1">
+            <div id="pizza" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('index')" class="img1" src="img/pizza.png" alt="پیتزا">
+                </div>
+                <br>
+                <span class="span1">پیتزا</span>
+            </div>
+            <div id="burger" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('burger')" class="img1" src="img/burger.png" alt="برگر" style="margin-top:20px;">
+                </div>
+                <br>
+                <span class="span1">برگر</span>
+            </div>
+            <div id="sandwich" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('sandwich')" class="img1" src="img/sandwich.png" alt="ساندویچ" style="margin-top:30px;">
+                </div>
+                <br>
+                <span class="span1">ساندویچ</span>
+            </div>
+            <div id="sodas" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('sodas')" class="img1" src="img/sodas.png" alt="نوشیدنی" style="margin-top:20px;">
+                </div>
+                <br>
+                <span class="span1">نوشیدنی</span>
+            </div>
+            <div id="frenchfrize" class="div2">
+                <div class="div3">
+                    <img onclick="navigateTo('frenchfrize')" style="width: 50%;" class="img1" src="img/frenchfrize.png" alt="پیش غذا" style="width: 70%;">
+                </div>
+                <br>
+                <span class="span1">پیش غذا</span>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <div style="margin-bottom:20px;" class="container">
+            <!-- فرنچ فرایز -->
+            <div class="col-6 a1">
+                <img style="scale: 0.8;" class="food-img" src="img/frenchfrize.png" alt="فرنچ فرایز">
+                
+                <span style="font-size: large;" class="food-title">سیب‌زمینی سرخ کرده</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> سیب‌زمینی سرخ شده، نمک، فلفل
+                </p>
+                
+                <div>
+                    <i onclick="increaseQuantity('frenchfrize')" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="frenchfrize-count">0</span>
+                    <i onclick="decreaseQuantity('frenchfrize')" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price41">70000</span>تومان</div>
+            </div>
+
+            <!-- ناگت مرغ -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/chicken-nuggets.png" alt="ناگت مرغ">
+                <br>
+                <span class="food-title">ناگت مرغ</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> مرغ، آرد، ادویه‌ها، روغن
+                </p>
+                <br>
+                <div>
+                    <i onclick="increaseQuantity('chicken-nuggets')" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="chicken-nuggets-count">0</span>
+                    <i onclick="decreaseQuantity('chicken-nuggets')" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price42">60000</span>تومان</div>
+            </div>
+        </div>
+
+        <div style="margin-bottom:20px;" class="container">
+            <!-- حلقه پیاز -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/onion-rings.png" alt="حلقه پیاز">
+                <br>
+                <span class="food-title">حلقه پیاز</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> پیاز، آرد، ادویه‌ها، روغن
+                </p>
+                <br>
+                <div>
+                    <i onclick="increaseQuantity('onion-rings')" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="onion-rings-count">0</span>
+                    <i onclick="decreaseQuantity('onion-rings')" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price43">50000</span>تومان</div>
+            </div>
+
+            <!-- سالاد کلم -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/coleslaw.png" alt="سالاد کلم">
+                <br>
+                <span class="food-title">سالاد کلم</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> کلم سفید، هویج، سس مایونز، سرکه
+                </p>
+                <br>
+                <div>
+                    <i onclick="increaseQuantity('coleslaw')" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="coleslaw-count">0</span>
+                    <i onclick="decreaseQuantity('coleslaw')" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price44">20000</span>تومان</div>
+            </div>
+        </div>
+
+        <div style="margin-bottom:20px;" class="container">
+            <!-- سالاد کاهو -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/lettuce-salad.png" alt="سالاد کاهو">
+                <br>
+                <span class="food-title">سالاد کاهو</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> کاهو، گوجه فرنگی، خیار، سس مخصوص
+                </p>
+                <br>
+                <div>
+                    <i onclick="increaseQuantity('lettuce-salad')" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="lettuce-salad-count">0</span>
+                    <i onclick="decreaseQuantity('lettuce-salad')" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price45">40000</span>تومان</div>
+            </div>
+
+            <!-- قارچ سوخاری -->
+            <div class="col-6 a1">
+                <img class="food-img" src="img/fried-mushrooms.png" alt="قارچ سوخاری">
+                <br>
+                <span class="food-title">قارچ سوخاری</span>
+                <br>
+                <p class="food-description">
+                    <span class="food-ingredient-title">مواد:</span> قارچ، آرد، ادویه‌ها، روغن
+                </p>
+                <br>
+                <div>
+                    <i onclick="increaseQuantity('fried-mushrooms')" style="color: green; margin-left:27px;cursor: pointer" class="fa-solid fa-plus"></i>
+                    <span id="fried-mushrooms-count">0</span>
+                    <i onclick="decreaseQuantity('fried-mushrooms')" style="color: red;margin-right: 27px;cursor: pointer" class="fa-solid fa-minus"></i>
+                </div>
+                <br>
+                <div style="color: red;font-weight: 1000; font-family:samim ;"><span style="color: rgba(0, 0, 0, 0.486);font-weight: 500;">قیمت: </span><span id="price46">80000</span>تومان</div>
+            </div>
+            
+        </div>
+    </div>
+    <div style="text-align: center; color: blue;font-size: larger;font-weight: bold;font-family:samim ;" id="final"></div>
+    <div style="text-align: center;"><Span style="text-align: center; color: rgba(0, 0, 0, 0.726);font-size: larger;font-weight: bold;font-family:samim ;" id="final3"></Span>
+    <Span style="text-align: center; color: rgb(255, 0, 0);font-size: larger;font-weight: bold;font-family:samim ;" id="final2"></Span>
+    
+    <Span style="text-align: center; color: rgb(0, 0, 0, 0.726);font-size: larger;font-weight: bold;font-family:samim ;" id="final4"></Span></div>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button style="font-size: larger;font-weight: bold;font-family:samim ;" class="btn btn-success" type="button">ثبت</button>
+    <br>  
+    <br>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function signup(){
+            window.location.href = 'signup.html';
+        }
+        function login(){
+            window.location.href = 'login.html';
+        }
+        function navigateTo(page) {
+            $.ajax({
+                url: `${page}.html`,
+                method: 'GET',
+                success: function (html) {
+                    $('body').html(html);
+                },
+                error: function () {
+                    alert('خطا در بارگذاری صفحه.');
+                }
+            });
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+
+        function increaseQuantity(item) {
+            var countElement = document.getElementById(`${item}-count`);
+            var count = parseInt(countElement.innerText);
+            countElement.innerText = count + 1;
+            updateFinal();
+
+        }
+
+        function decreaseQuantity(item) {
+            var countElement = document.getElementById(`${item}-count`);
+            var count = parseInt(countElement.innerText);
+            if (count > 0) {
+                countElement.innerText = count - 1;
+            }
+            updateFinal();
+
+        }
+        function updateFinal() {
+            var p1 = document.getElementById('frenchfrize-count').innerText;
+            var p2 = document.getElementById('chicken-nuggets-count').innerText;
+            var p3 = document.getElementById('onion-rings-count').innerText;
+            var p4 = document.getElementById('coleslaw-count').innerText;
+            var p5 = document.getElementById('lettuce-salad-count').innerText;
+            var p6 = document.getElementById('fried-mushrooms-count').innerText;
+            var finalContent = "";
+            if (parseInt(p1) > 0) finalContent += p1 + " سیب‌زمینی سرخ شده <br>";
+            if (parseInt(p2) > 0) finalContent += p2 + "ناگت مرغ <br>";
+            if (parseInt(p3) > 0) finalContent += p3 + "  حلقه پیاز <br>";
+            if (parseInt(p4) > 0) finalContent += p4 + " سالاد کلم<br>";
+            if (parseInt(p5) > 0) finalContent += p5 + " سالاد کاهو<br>";
+            if (parseInt(p6) > 0) finalContent += p6 + " قارچ سوخاری<br>";
+            if(parseInt(p1) == 0&&parseInt(p2) == 0&&parseInt(p3) == 0&&parseInt(p4) == 0&&parseInt(p5) == 0&&parseInt(p6) == 0){ document.getElementById('final2').innerHTML="";
+            document.getElementById('final3').innerHTML=""; document.getElementById('final4').innerHTML=""}
+            if(parseInt(p1) > 0||parseInt(p2) > 0||parseInt(p3) > 0||parseInt(p4) > 0||parseInt(p5) > 0||parseInt(p6) > 0){
+                document.getElementById('final3').innerHTML="قیمت:"
+                document.getElementById('final2').innerHTML=(p1*document.getElementById('price41').innerHTML)+(p2*document.getElementById('price42').innerHTML)+(p3*document.getElementById('price43').innerHTML)+(p4*document.getElementById('price44').innerHTML)+(p5*document.getElementById('price45').innerHTML)+(p6*document.getElementById('price46').innerHTML)
+                document.getElementById('final4').innerHTML="تومان"
+            } 
+        document.getElementById('final').innerHTML = finalContent;
+        }
+    </script>
+</body>
+</html>

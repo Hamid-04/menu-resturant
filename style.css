@@ -1,0 +1,176 @@
+@font-face {
+        font-family: sahel;
+        src: url(font/Sahel-Black.ttf);
+    }
+    @font-face {
+        font-family: samim;
+        src: url(font/Samim.ttf);
+    }
+    
+    body {
+        font-family: 'Sahel', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: linear-gradient(135deg, #fceabb, #f8b500);
+        color: #333;
+    }
+    
+    .div1 {
+        text-align: center;
+        overflow-x: auto;
+        display: flex;
+        white-space: nowrap;
+        margin: auto;
+        font-family: 'Sahel', Arial, sans-serif;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    
+    }
+    .div1::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .div2 {
+        text-align: center;
+        width: 300px;
+        height: auto;
+        flex-shrink: 0;
+        padding: 10px;
+        margin-inline: -70px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 300px; 
+        height: auto; 
+        flex-shrink: 0;
+        padding: 10px;
+        margin-inline: -70px;
+        display: flex; /* فعال‌سازی فلکس‌باکس */
+        flex-direction: column; /* آیتم‌ها در ستون قرار گیرند */
+        justify-content: center; /* محتوای عمودی وسط */
+        align-items: center; /* محتوای افقی وسط */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    .div2:hover {
+        transform: scale(1.05);
+        
+        /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
+    }
+    
+    .img1 {
+        width: 60%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        
+    }
+    .img1:hover {
+        transform: scale(1.1);
+    }
+    
+    .div3 {
+        height: 160px;
+        
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .food-img {
+        margin-top: 7px;
+        width: 170px;
+        transition: transform 0.3s ease;
+        scale: 0.9;
+        display: block; /* حذف فاصله‌های اضافی */
+        margin: 0 auto; /* تصویر وسط‌چین شود */
+        margin: auto;
+        
+    }
+    .food-img:hover {
+        transform: scale(1.1);
+    }
+    
+    .food-title {
+        color: #e63946;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: 'Sahel', Arial, sans-serif;
+    }
+    
+    .food-description {
+        font-size: 1em;
+        color: #555;
+        margin: 10px 0;
+        font-family: 'Samim', Arial, sans-serif;
+        line-height: 1.5;
+        padding: 15px 15px -5px 15px;
+    }
+    
+    .food-ingredient-title {
+        color: #e63946;
+        font-weight: bold;
+        padding-right: 15px;
+    }
+    
+    .a1 {
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        height: 400px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        /* padding: 15px; */
+        background-color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center
+    }
+    .a1:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .a2{
+        position: static;
+        bottom: 50px;
+    }
+    .text1 {
+        font-size: 100px; /* اندازه متوسط */
+        
+    }
+    @media (max-width: 1080px) {
+        .text1 {
+            font-size: 50px; /* اندازه متوسط */
+        }
+    }
+    
+    /* زمانی که عرض صفحه کمتر از 480px باشد */
+    @media (max-width: 575px) {
+        .text1 {
+            font-size: 35px; /* اندازه کوچک */
+        }
+    }
+    @media (max-width: 370px) {
+        .text1 {
+            font-size: 30px; /* اندازه کوچک */
+        }
+    }
+    .text2{
+        font-size: 40px;font-family: samim; color: rgb(255, 0, 0);
+    }
+    @media (max-width: 410px) {
+        .text2 {
+            font-size: 30px; /* اندازه متوسط */
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
